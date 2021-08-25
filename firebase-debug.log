@@ -1,0 +1,157 @@
+[debug] [2021-08-06T03:27:58.492Z] ----------------------------------------------------------------------
+[debug] [2021-08-06T03:27:58.493Z] Command:       /home/august/.nvm/versions/node/v14.17.4/bin/node /usr/bin/firebase deploy
+[debug] [2021-08-06T03:27:58.493Z] CLI Version:   9.16.0
+[debug] [2021-08-06T03:27:58.493Z] Platform:      linux
+[debug] [2021-08-06T03:27:58.493Z] Node Version:  v14.17.4
+[debug] [2021-08-06T03:27:58.493Z] Time:          Thu Aug 05 2021 23:27:58 GMT-0400 (Eastern Daylight Time)
+[debug] [2021-08-06T03:27:58.493Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-06T03:27:58.524Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-06T03:27:58.525Z] > authorizing via signed-in user (augustfelso@gmail.com)
+[debug] [2021-08-06T03:27:58.525Z] [iam] checking project chat-app-7c117 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-08-06T03:27:58.526Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/chat-app-7c117:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-08-06T03:27:58.731Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:27:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=106","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:27:58.733Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/chat-app-7c117/serviceAccounts/chat-app-7c117@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2021-08-06T03:27:58.858Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:27:58 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:27:58.861Z] > refreshing access token with scopes: []
+[debug] [2021-08-06T03:27:58.861Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-06T03:27:58.915Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Fri, 06 Aug 2021 03:27:58 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:27:58.928Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117 [none]
+[debug] [2021-08-06T03:27:59.059Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117 200
+[debug] [2021-08-06T03:27:59.059Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117 {"projectId":"chat-app-7c117","projectNumber":"58323070593","displayName":"chat-app","name":"projects/chat-app-7c117","resources":{"hostingSite":"chat-app-7c117","realtimeDatabaseInstance":"chat-app-7c117-default-rtdb","storageBucket":"chat-app-7c117.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[debug] [2021-08-06T03:27:59.060Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117 [none]
+[debug] [2021-08-06T03:27:59.191Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117 200
+[debug] [2021-08-06T03:27:59.191Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117 {"projectId":"chat-app-7c117","projectNumber":"58323070593","displayName":"chat-app","name":"projects/chat-app-7c117","resources":{"hostingSite":"chat-app-7c117","realtimeDatabaseInstance":"chat-app-7c117-default-rtdb","storageBucket":"chat-app-7c117.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'chat-app-7c117'...
+[info] 
+[info] i  deploying database, functions, hosting 
+[info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] ✔  functions: Finished running predeploy script. 
+[info] Running command: npm run build
+[info] ✔  hosting: Finished running predeploy script. 
+[info] i  database: checking rules syntax... 
+[debug] [2021-08-06T03:28:09.138Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-06T03:28:09.138Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-06T03:28:09.196Z] <<< HTTP RESPONSE 200 {"date":"Fri, 06 Aug 2021 03:28:09 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:09.204Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/chat-app-7c117/locations/-/instances/chat-app-7c117-default-rtdb  
+ 
+[debug] [2021-08-06T03:28:09.583Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:09 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:09.586Z] >>> HTTP REQUEST PUT https://chat-app-7c117-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    "profiles": {
+      "$user_id": {
+        ".read": "$user_id === auth.uid",
+        ".write": "$user_id === auth.uid"
+      }
+    },
+    "rooms": {
+      ".read": "auth !== null",
+      "$room_id": {
+        ".read": "auth !== null",
+        ".write": "!data.exists() || data.child('admins').child(auth.uid).val() == true",
+        "fcmUsers": {
+          "$user_id": {
+            ".write": "$user_id === auth.uid"
+          }
+        },
+        "lastMessage": {
+          ".write": "auth !== null"
+        }
+      }
+    },
+    "messages": {
+      ".read": "auth !== null",
+      ".write": "auth !== null",
+      ".indexOn": "roomId",
+      "$message_id": {
+        ".read": "auth !== null",
+        ".write": "auth !== null"
+      }
+    },
+    "status": {
+      "$user_id": {
+        ".read": "auth !== null",
+        ".write": "$user_id === auth.uid"
+      }
+    },
+    "fcm_tokens": {
+      ".indexOn": ".value",
+      "$token_id": {
+        ".read": false,
+        ".write": "newData.val() === auth.uid"
+      }
+    },
+    ".read": false,
+    ".write": false
+  }
+}
+
+[debug] [2021-08-06T03:28:09.705Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Fri, 06 Aug 2021 03:28:09 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  database: rules syntax for database chat-app-7c117-default-rtdb is valid 
+[debug] [2021-08-06T03:28:09.709Z] Validating nodejs source
+[debug] [2021-08-06T03:28:10.620Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run serve",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^9.8.0",
+    "firebase-functions": "^3.14.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2021-08-06T03:28:10.620Z] Building nodejs source
+[info] i  functions: ensuring required API cloudfunctions.googleapis.com is enabled... 
+[info] i  functions: ensuring required API cloudbuild.googleapis.com is enabled... 
+[debug] [2021-08-06T03:28:10.621Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/chat-app-7c117/services/cloudfunctions.googleapis.com  
+ 
+[debug] [2021-08-06T03:28:10.621Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/chat-app-7c117/services/runtimeconfig.googleapis.com  
+ 
+[debug] [2021-08-06T03:28:10.622Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/chat-app-7c117/services/cloudbuild.googleapis.com  
+ 
+[debug] [2021-08-06T03:28:11.015Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:11.021Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  functions: required API cloudbuild.googleapis.com is enabled 
+[debug] [2021-08-06T03:28:11.026Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:10 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  functions: required API cloudfunctions.googleapis.com is enabled 
+[debug] [2021-08-06T03:28:11.027Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/chat-app-7c117/adminSdkConfig  
+ 
+[debug] [2021-08-06T03:28:11.143Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:11.145Z] >>> HTTP REQUEST GET https://runtimeconfig.googleapis.com/v1beta1/projects/chat-app-7c117/configs  
+ 
+[debug] [2021-08-06T03:28:11.424Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:11 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:11.425Z] Analyzing nodejs backend spec
+[info] i  functions: preparing functions directory for uploading... 
+[info] i  functions: packaged functions (72.45 KB) for uploading 
+[debug] [2021-08-06T03:28:11.552Z] >>> HTTP REQUEST GET https://cloudfunctions.googleapis.com/v1/projects/chat-app-7c117/locations/-/functions  
+ 
+[debug] [2021-08-06T03:28:12.243Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:12.247Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/chat-app-7c117/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-06T03:28:13.063Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:13.065Z] >>> HTTP REQUEST POST https://cloudfunctions.googleapis.com/v1/projects/chat-app-7c117/locations/us-central1/functions:generateUploadUrl  
+ 
+[debug] [2021-08-06T03:28:13.676Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 06 Aug 2021 03:28:13 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-06T03:28:13.678Z] >>> HTTP REQUEST PUT https://storage.googleapis.com/gcf-upload-us-central1-f360b888-4774-4c7d-b328-00ca64c4c4e8/92f26fbd-8c50-4c20-9d61-4da8d115a8ed.zip?GoogleAccessId=service-58323070593@gcf-admin-robot.iam.gserviceaccount.com&Expires=1628222293&Signature=M7vi1XzTLXjVvqAXOyNuVq%2Bog%2Fc9SbXOyS7n%2FbHCKbyf%2BaXKxBZABjMwzI8rVIEPojRj3n9NLaIabcfqmVWx9o0LGgxy9mkVyr%2FNbWYmbErRxQvBfBqmgR%2BB1APK1JMr62ERaWSATUnj2qnmZ0lYmWNbZZFfGeD4BNe3OzjdB3Y%2BDeqtiNx7HG40Lh0jZrbMzTVyCujZaR0jyXeMtv%2FaHbDODr4KMJ42TLFaTsRgHc1TD42rgxj5b3ieuI8CJAqaus1WSqjgSXZ5W9Kl%2Fi3NlM16Mmgf9fSse5X1%2B5%2Flf08bC65Oo6NrzPzaUxlz8dVdlBZkN5ev06hu7RgmXqBGFw%3D%3D  
+ <request body omitted>
