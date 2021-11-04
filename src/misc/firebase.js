@@ -6,9 +6,8 @@ import 'firebase/storage';
 import 'firebase/messaging';
 import 'firebase/functions';
 import { isLocalHost } from './helpers';
-import { config, messagingKey} from './config.js';
 
-const firebaseConfig = config;
+const firebaseConfig = ${{ secrets.FIREBASE_CONFIG }};
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
