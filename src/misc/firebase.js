@@ -7,7 +7,15 @@ import 'firebase/messaging';
 import 'firebase/functions';
 import { isLocalHost } from './helpers';
 
-const firebaseConfig = ${{ secrets.FIREBASE_CONFIG }};
+const firebaseConfig = {
+  apiKey: "AIzaSyBMeCI8q8oYIse-ocBC6j9Qf3nUokRzJQI",
+  authDomain: "chat-app-7c117.firebaseapp.com",
+  databaseURL: "https://chat-app-7c117-default-rtdb.firebaseio.com",
+  projectId: "chat-app-7c117",
+  storageBucket: "chat-app-7c117.appspot.com",
+  messagingSenderId: "58323070593",
+  appId: "1:58323070593:web:aa19cb636a52e3dee22780"
+};
 
 // Initialize Firebase
 const app = firebase.initializeApp(firebaseConfig);
